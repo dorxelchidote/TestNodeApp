@@ -1,0 +1,10 @@
+on: push
+jobs:
+  buid-node:
+    runs-on: ubuntu-latest
+    container: mongo
+    steps:
+      - run: mongosh
+      - run: exit
+
+      

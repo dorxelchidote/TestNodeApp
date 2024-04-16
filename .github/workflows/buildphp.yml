@@ -1,0 +1,7 @@
+on: push
+jobs:
+  buid-node:
+    runs-on: ubuntu-latest
+    container: php
+    steps:
+      - run: php -v
